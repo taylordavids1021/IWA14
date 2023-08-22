@@ -2,13 +2,8 @@ firstName = 'John';
 age = 35;
 hobby = 'Coding';
 
-const logTwice = () => {
-  console(parameter)
-  console(parameter)
+function userInfo () {
+  console.log(`Hello, ${firstName} (${age}). I love ${hobby}!\n`.repeat(2))
 }
 
-function hobby () {
-  logTwice(`Hello, ${name} (${age}). I love ${hobby}!`)
-}
-
-hobby()
+userInfo()
