@@ -3,11 +3,9 @@ function add (a, b) { return a + b }
 function multiply (a, b) { return a * b }
 
 function internal() {
-	add()
-	multiply()
-	this.add = this.add(this.a, this.b)
-	this.multiply = this.multiply(this.a , this.b)
-	console.log(this.add)
+	this.added = this.add(this.a ,this.b )
+	this.multiplied = this.multiply(this.a ,this.b )
+	console.log(this.multiplied)
 }
 
 // Not allowed to change below this
