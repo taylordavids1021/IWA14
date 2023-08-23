@@ -5,9 +5,9 @@ function multiply (a, b) { return a * b }
 function internal() {
 	add()
 	multiply()
-	this.add = this.add(example1.internal.a, example1.internal.b)
-	this.multiply = this.multiply(example2.internal.a, example1.internal.b)
-	console.log(internal.this)
+	this.add = this.add(this.a, this.b)
+	this.multiply = this.multiply(this.a , this.b)
+	console.log(this.add)
 }
 
 // Not allowed to change below this
