@@ -5,10 +5,11 @@ function multiply (a, b) { return a * b }
 function internal() {
 	add()
 	multiply()
-	const added = add(example1.internal.a, example1.internal.b)
-	const multiplied = multiply(example1.internal.a, example1.internal.b)
-	console.log(this.multiplied)
+	const added = add(this.internal.a, this.internal.b)
+	const multiplied = multiply(this.internal.a, this.internal.b)
+	console.log(multiplied)
 }
+
 // Not allowed to change below this
 
 const example1 = {
