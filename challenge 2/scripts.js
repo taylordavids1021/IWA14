@@ -5,9 +5,9 @@ function multiply (a, b) { return a * b }
 function internal() {
 	add()
 	multiply()
-	const added = add(this.internal.a, this.internal.b)
-	const multiplied = multiply(this.internal.a, this.internal.b)
-	console.log(multiplied)
+	const added = add(this.internal.c, this.internal.c)
+	const multiplied = multiply(this.internal.b, this.internal.c)
+	console.log(added + multiplied)
 }
 
 // Not allowed to change below this
